@@ -3,8 +3,8 @@ const express = require("express");
 const cars = require("./src/routers/cars");
 const connectDB = require("./src/db/db");
 
-const app = express();
 connectDB();
+const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
